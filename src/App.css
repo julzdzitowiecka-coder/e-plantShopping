@@ -6,6 +6,18 @@
   overflow: hidden;
 }
 
+/* Reset some default styles */
+body, h1, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
 .landing-page {
   position: relative;
   width: 100vw;
@@ -30,21 +42,28 @@
   justify-content: center;
   height: 100vh;
   width: 100vw;
- top: 100px;
+  top: 0px;
+  position: relative;
   backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   background-color: rgba(0,0,0,0.5);
   gap: 20px;
+  padding: 40px;
+  z-index: 1;
+}
+.fade-out .content {
+  animation: fadeOut 0.5s forwards;
+  z-index: -1;
 }
 
 .landing_content {
- margin-top: 430px;
+ /* margin-top: 430px;
   margin-left: 100px;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
   z-index: 1;
   text-align: center;
-  /* background-color: red; */
-  width: 400px;
-  height: 400px;
+  min-width: 400px;
+  min-height: 400px;
   display: flex;
   align-items: center;
   flex-direction: column;
