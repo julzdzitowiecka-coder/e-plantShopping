@@ -4,7 +4,6 @@ import CartItem from './CartItem';
 function ProductList({ onHomeClick }) {
     const [showCart, setShowCart] = useState(false);
     const [showPlants, setShowPlants] = useState(false); // State to control the visibility of the About Us page
-
     const plantsArray = [
         {
             category: "Air Purifying Plants",
@@ -289,7 +288,7 @@ function ProductList({ onHomeClick }) {
                                                 <button className="product-button" onClick={() => handleAddToCart(item)}>Add to Cart</button>
                                             </div>
                                         ))
-                                    }
+                                    } 
                                 </div>
                             </div>
                         ))
