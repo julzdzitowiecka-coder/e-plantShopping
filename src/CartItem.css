@@ -13,8 +13,7 @@
 .cart-item-image {
   width: 200px;
   height: 200px;
-  /* object-fit: contain; */
-  margin-right: 20px;
+  margin: 0 20px;
 }
 
 .cart-item-details {
@@ -211,10 +210,20 @@
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
+    
    }
    .total_cart_amount{
     font-size: 20px;
     font-weight: 900;
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    top: 50%;
+    height: 28px;
+    margin-top: -14px;
+    width: 20px;
+    margin-left: -10px;
+    text-align: center;
    }
 .continue_shopping_btn{
   margin-top: -50px;
